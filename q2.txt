@@ -1,0 +1,52 @@
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+void moo()
+{
+ int size;
+    cin>>size;
+	int *arr=new int[size];
+	cout<<"Enter element of size: "<<endl;
+	
+	for(int c=0 ; c<size ; c++)
+	{
+		arr[c]=c+1;
+		cout<<arr[c]<<" ";
+	}
+	for(int c=0 ; c<size ; c++)
+	{
+		cout<<arr[c]<<" ";
+		
+	}
+	delete [] arr;	
+}
+void ato()
+{
+	int rows,colums;
+	cin>>rows>>colums;
+	int* arr = new int [rows];
+	for(int n=0 ; n<rows ; n++)
+	{
+		arr[n]=new int [colums];
+	}
+	
+	for(int n=0;n<rows;n++)
+	{
+		for(int n=0 ; n<colums;n++)
+		{
+			arr[c][n]=10;
+			cout<<arr[c][n]<<" " ;
+		}
+	}
+	for( int c=0; i<rows;c++)
+	{
+		delete []arr[c];
+	}
+	delete []arr;
+}
+int main()
+{
+   moo();
+   ato();
+	return 0;
+}
